@@ -46,7 +46,7 @@ Caso não seja passado nenhum filtro, será retornado todos os filmes da lista.
 
 <br><br>
 
-<h2>Video demonstrativo</h2>
+<h2>Vídeo demonstrativo</h2>
 
  
  
