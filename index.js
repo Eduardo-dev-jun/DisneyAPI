@@ -16,8 +16,6 @@ app.get('/filters', (req, res) => {
 app.get('/movies', (req, res) => {
   const years = req.query.years ? req.query.years.split(',') : [];
   const genres = req.query.genre ? req.query.genre.split(',') : [];
-  
-  console.log(req.query)
 
   const filteredMovies = disneyMovies.filter(movie => {
     return (years.length === 0 || years.includes(movie.release_date.split('/')[2])) &&
@@ -28,6 +26,6 @@ app.get('/movies', (req, res) => {
 });
 
 
-app.listen(8800, () => {
-  console.log('Server is running on port 8800');
+app.listen(8000, () => {
+  console.log('Server is running on port 8000');
 });
